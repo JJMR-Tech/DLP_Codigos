@@ -1,0 +1,17 @@
+------------------------------------------------------------------------------------
+-- Simulación 1
+-- Diseñador: José de Jesús Morales Romero
+-- Archivo: Ej_13_Simulacion.vhd
+-- Fecha: --/--/--
+-- Versión: 1.0
+-- Dependencias: Ninguna
+-- Cambios: ----
+------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------
+-- El lenguaje VHDL sirve también para la descripción de modelos para simulación,
+--      sus principales características son:
+-- -> No tiene demasiadas restricciones.
+-- -> Solo se requiere un interpretre de las instrucciones.
+-- -> No importa el nivel de abstracción.
+------------------------------------------------------------------------------------

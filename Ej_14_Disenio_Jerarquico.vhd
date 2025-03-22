@@ -1,0 +1,47 @@
+------------------------------------------------------------------------------------
+-- Diseño Jerárquico
+-- Diseñador: José de Jesús Morales Romero
+-- Archivo: Ej_14_Disenio_Jerarquico.vhd
+-- Fecha: --/--/--
+-- Versión: 1.0
+-- Dependencias: Ninguna
+-- Cambios: ----
+------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------
+-- ¿Cómo integrar dos o más entidades en un sola entidad con el fin de formar un
+--      Sistema más complejo?
+--
+-- Integración de Estructuras Jerárquicas: Uso de Componentes (Components)
+--
+--                   Paquetes (Package)      Código Entidad Integradora
+--                   ------------------      ---------------------------
+--  -----------     |  --------------  |    |  -----------------------  |
+-- | Código C1 | -> | | Component C1 | | -> | | Llamado a Component 1 | |
+--  -----------     |  --------------  |    |  -----------------------  |
+-- | Código C2 | -> | | Component C2 | | -> | | Llamado a Component 2 | |
+--  -----------     |  --------------  |    |  -----------------------  |
+-- | Código C3 | -> | | Component C3 | | -> | | Llamado a Component 3 | |
+--  -----------     |  --------------  |    |  -----------------------  |
+-- | - - - - - | -> | | - - - - - -  | | -> | | - - - - - - - - - - - | |
+--  -----------     |  --------------  |    |  -----------------------  |
+-- | Código Cn | -> | | Component Cn | | -> | | Llamado a Component n | |
+--  -----------     |  --------------  |    |  -----------------------  |
+--                   ------------------      ---------------------------
+--
+-- Metodología de Diseño de Estructuras Jerárquicas
+-- -> Analizar el sistema a diseñar y dividirlo en bloques jerárquicos (top-down)
+--       diseño de componentes.
+-- -> Describir, simular y sintetizar los módulos o componentes.
+-- -> Crear un Paquete de Componentes (Package) - Puede ser realizado por código 
+--       VHDL o por Esquemático
+-- -> Describir la Entidad Integradora de Nivel Superior (con mayor jerarquia) que
+--       representará al Sistema Completo - Puede ser realizado por código VHDL o
+--       por Esquemático
+------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------
+-- Ejemplo: Contador de segundos
+-- Realizar un diseño jerárquico de un circuito que cuente los segundos desde el 
+--      0 al 59. Al llegar al valor máximo (59) debe reiniciarse el contador.
+------------------------------------------------------------------------------------
