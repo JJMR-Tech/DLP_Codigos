@@ -1,3 +1,3 @@
-#Códigos -- Dispositivos Lógicos Programables
+# Códigos: Dispositivos Lógicos Programables
 
-Códigos para las clases de Dispotivos Lógicos Programables.
+Códigos para las clases de Dispositivos Lógicos Programables.
