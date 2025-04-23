@@ -1,0 +1,34 @@
+------------------------------------------------------------------------------------
+-- Estructuras de Repetición
+-- Diseñador: José de Jesús Morales Romero
+-- Archivo: Ej_15_Estructuras_Repeticion.vhd
+-- Fecha: --/--/--
+-- Versión: 1.0
+-- Dependencias: Ninguna
+-- Cambios: ----
+------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------
+-- Una estructura de repetición crea cero, una o más copias de un conjunto cerrado de instrucciones concurrentes.
+-- Hay dos tipos de estructuras de repetición:
+--      - For ... generate
+--      - If .... generate
+------------------------------------------------------------------------------------
+-- Veamos el primero
+-- For ... (n) ... generate
+--      A través de un bucle finito se crean n copias de un conjunto de instrucciones concurrentes.
+--      n puede ser igual o mayor a 0.
+------------------------------------------------------------------------------------
+-- Sintaxis:
+
+-- Etiqueta : for Identificador in Rango generate
+--              {enunciados_concurrentes}
+-- end generate [etiqueta]
+
+-- Descripción:
+-- Etiqueta: nombre de la estructura de repetición. Sirve para construir instrucciones generate anidadas.
+-- Identificador: Etiqueta (variable contador) utilizada para crear "secuencialmente" las copias.
+-- Rango: Número de copias. Se puede definir de dos formas, sin embargo, ambas crean la misma cantidad de copias:
+--      integer_expresion to integer_expresion 
+--      integer_expresion downto integer_expresion
+------------------------------------------------------------------------------------
